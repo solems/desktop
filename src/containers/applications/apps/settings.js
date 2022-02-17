@@ -31,7 +31,7 @@ export const Settings = () => {
     >
       <ToolBar app={wnapp.action} icon={wnapp.icon} size={wnapp.size} name="Settings" />
       <div className="windowScreen flex flex-col" data-dock="true">
-        <div className="restWindow flex-grow flex flex-col">
+        <div className="restWindow flex-grow flex">
           <nav>
             <div className="nav_top">
               <div className="account" onClick={() => setPage("Accounts")}>

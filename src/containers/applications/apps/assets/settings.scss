@@ -3,6 +3,7 @@
   --txt_clr-rgb: 0 0 0;
   --clr_prm: #0067c0;
   --scroll: rgb(255 255 255 / 80%);
+  height: 100%;
 
   container: inline-size / appWrapper;
   * {
@@ -22,6 +23,9 @@
     left: 0;
     width: 300px;
     height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 
     .nav_top {
       .account {
@@ -75,7 +79,10 @@
     .nav_bottom {
       display: flex;
       flex-direction: column;
-      overflow: overlay;
+      width: 100%;
+      flex-grow: 1;
+      overflow-x: hidden;
+      overflow-y: scroll;
       position: relative;
 
       .navLink {
@@ -121,6 +128,9 @@
   main {
     margin-left: 300px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 
     .sysTop {
       width: min(100%, 1000px);
